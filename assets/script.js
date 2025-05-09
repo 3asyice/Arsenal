@@ -25,12 +25,12 @@ document.addEventListener("DOMContentLoaded", function() {
     const a = document.createElement('a');
     const img = document.createElement('img');
     const iframe = document.createElement('iframe');
-    const downloadButton = document.createElement('button'); // Novo botão de download
+    const downloadButton = document.createElement('button');
     
     h2.textContent = video.title;
     h2.style.fontFamily = "sans-serif";
     h2.style.fontWeight = '600';
-    h2.style.fontSize = '18px';
+    h2.style.fontSize = '14px';
     
     img.src = video.img;
     img.alt = video.title;
@@ -51,7 +51,11 @@ document.addEventListener("DOMContentLoaded", function() {
     iframe.frameBorder = "0";
     
 downloadButton.textContent = 'Download';
-downloadButton.style.marginTop = '10px';
+downloadButton.style.marginRight = '20px';
+downloadButton.style.backgroundColor = '#000';
+downloadButton.style.border = '1px solid #0f0';
+downloadButton.style.color = '#0f0';
+
 downloadButton.onclick = function() {
   const link = document.createElement('a');
   link.href = video.downloadUrl; // Usando o novo campo downloadUrl
