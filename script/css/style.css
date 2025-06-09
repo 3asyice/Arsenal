@@ -5,8 +5,7 @@
 }
 
 body {
-  overflow: scroll;
-  margin: 0 auto auto;
+  margin: 0;
   background-color: rgba(0, 0, 0, 1);
 }
 
@@ -29,7 +28,6 @@ h2 {
   font-weight: normal;
   color: #00ff00;
   font-family: 'Jacquard 24 Charted', sans-serif;
-  
   font-size: 21px;
   background:#545454;
 }
