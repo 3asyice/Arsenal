@@ -17,18 +17,59 @@
   <h1>ArsenalG • The Gayer</h1>
 </header>
 <style>
-nav button{
+nav{
+  display:flex;
+}
+nav button.a{
   color:#00ff00;
   background:none;
   border:1px dashed #00ff00;
   font-size: 18px;
-  margin:20px 20px 20px 330px;
+  margin:20px 20px 20px 250px;
+}
+nav button.b{
+  background:none;
+  border:none;
+  font-size: 18px;
+  color:white;
+  margin-left: 20px;
+}
+
+.h{
+  top:13%;right:50%;left:0;bottom:50%;
+  position:fixed;
+  display:none;
+  background: #2F2F2F;
+}
+nav div.h button{
+  color:#fff;
+}
+nav div.h ul li a{
+  color:#519647;
+  text-decoration: none;
+}
+nav div.h fieldset legend{
+  color:#fff;
 }
 </style>
 <nav>
-<center>
-<button onclick="location.href='script/page/1.html'">Próximo</button>
-</center>
+
+<button class="b" onclick="w()">☰</button>
+<button class="a" onclick="location.href='script/page/1.html'">Próximo</button>
+
+<div class="h" id="h">
+<button class="b" onclick="w()">X</button>
+<fieldset>
+  
+<legend>Categorias</legend>
+<ul type="none">
+  <li><a href="">Hétero</a></li>
+  <li><a href="">Gay</a></li>
+  <li><a href="">Lésbica</a></li>
+</ul>
+</fieldset>
+
+</div>
 </nav>
 <main>
 <section>
@@ -38,6 +79,16 @@ nav button{
   <!-- Os vídeos serão adicionados aqui pelo JavaScript -->
 </section>
 </main>
+<script type="text/javascript" charset="utf-8">
+  var x = document.getElementById('h');
+  var y = false;
+  
+function w() {
+  y =! y;
+  x.style.display = y ?
+  'none' : 'block';
+}
+</script>
   <script src="./assets/script.js"></script>
 </body>
 </html>
