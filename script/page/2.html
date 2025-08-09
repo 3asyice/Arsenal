@@ -19,12 +19,39 @@
   <h1>ArsenalG • The Gayer</h1>
 </header>
 <style>
+nav{
+  display:flex;
+}
 nav button.a{
   color:#00ff00;
   background:none;
   border:1px dashed #00ff00;
   font-size: 18px;
-  margin:20px 20px 20px 330px;
+  margin:20px 20px 20px 250px;
+}
+nav button.b{
+  background:none;
+  border:none;
+  font-size: 18px;
+  color:white;
+  margin-left: 20px;
+}
+
+.h{
+  top:10%;right:50%;left:0;bottom:50%;
+  position:fixed;
+  display:none;
+  background: #2F2F2F;
+}
+nav div.h button{
+  color:#fff;
+}
+nav div.h ul li a{
+  color:#519647;
+  text-decoration: none;
+}
+nav div.h fieldset legend{
+  color:#fff;
 }
 nav div.flex{
 display:flex;
@@ -36,13 +63,25 @@ margin:5px;
 }
 </style>
 <nav>
-<center>
-<button class="a" onclick="location.href='../../script/page/2.html'">Próximo</button>
-</center>
-<center>
-  <button class="a" onclick="location.href='../../script/page/4.html'">Próximo</button>
-</center>
+  <button class="b" onclick="w()">☰</button>
+  <div class="flex">
+    <button class="a" onclick="location.href='../../index.html'">1</button>
+    <button class="a" onclick="location.href='../../script/page/3.html'">2</button>
+    <button class="a" onclick="location.href='../../script/page/4.html'">3</button>
+
+  </div>
 </nav>
+<div class="h" id="h">
+  <button class="b" onclick="w()">X</button>
+  <fieldset>
+    <legend>Categorias</legend>
+    <ul type="none">
+      <li><a href="../../script/page/2.html">Hétero</a></li>
+      <li><a href="../../index.html">Gay</a></li>
+      <li><a href="">Lésbica</a></li>
+    </ul>
+  </fieldset>
+</div>
 <main>
 <section>
   
@@ -51,6 +90,16 @@ margin:5px;
   <!-- Os vídeos serão adicionados aqui pelo JavaScript -->
 </section>
 </main>
+<script>
+var x = document.getElementById('h');
+var y = false;
+
+function w() {
+  y = !y;
+  x.style.display = y ?
+    'none' : 'block';
+}
+</script>
   <script src="../../script/js/2.js"></script>
 </body>
 </html>
