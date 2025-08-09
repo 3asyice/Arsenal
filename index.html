@@ -53,12 +53,23 @@ nav div.h ul li a{
 nav div.h fieldset legend{
   color:#fff;
 }
+nav div.flex{
+display:flex;
+margin:0;
+width:50px;
+}
+nav div.flex button{
+margin:5px;
+}
 </style>
 <nav>
 
 <button class="b" onclick="w()">☰</button>
-<button class="a" onclick="location.href='script/page/1.html'">Próximo</button>
-
+<div class="flex">
+<button class="a" onclick="location.href='script/page/1.html'">1</button>
+<button class="a" onclick="location.href='script/page/3.html'">2</button>
+<button class="a" onclick="location.href='script/page/4.html'">3</button>
+</div>
 <div class="h" id="h">
 <button class="b" onclick="w()">X</button>
 <fieldset>
