@@ -35,13 +35,15 @@ h2 {
 iframe {
   border-right: 1px solid #00ff00;
   border-left: 1px solid #00ff00;
+  width: fit-content;
 }
 
 img {
   border: 1px solid #00ff00;
   padding-right: 3%;
   padding-left: 3%;
-  width: 100%;
+  width: 450px;
+  height: fit-content;
 }
 
 .header_class {
@@ -53,6 +55,7 @@ img {
 iframe{
 width: 600px;
 height: 600px;
+margin: 0 16px 0 16px;
 }
 img{
 width: fit-content;
