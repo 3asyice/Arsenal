@@ -49,3 +49,13 @@ img {
   margin: 0;
   display: block;
 }
+@media (min-width:1024){
+iframe{
+width: 600px;
+height: 600px;
+}
+img{
+width: fit-content;
+height: auto;
+}
+}
