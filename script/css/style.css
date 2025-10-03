@@ -54,11 +54,10 @@ img {
 @media (min-width:1024){
 iframe{
 width: 600px;
-height: 600px;
-margin: 0 16px 0 16px;
+margin: 0 32px 0 32px;
 }
 img{
-width: fit-content;
-height: auto;
+width: 650px;
+height: fit-content;
 }
 }
